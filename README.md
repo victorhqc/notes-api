@@ -2,9 +2,9 @@
 
 ## Introduction
 
-I've been using Google Keep for some time now, and I've always loved the App. Until I accidentally removed a note
-forever, at some point, I guess with my phone, the text from some important Note was modified, and I can no way
-to see how the note was before that accidental chenge. That was pretty frustrating at the time, and as Google Keep
+I've been using Google Keep for some time now, and I loved the App. Until I accidentally removed a note forever,
+at some point, I guess with my phone, the text from some important note was modified, and I have no way to see
+how the note was before that accidental change. That was pretty frustrating at the time, and as Google Keep
 is a closed project, I decided to make my very own and open source Note application. This of course being the
 standalone API.
 
