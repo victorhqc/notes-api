@@ -1,24 +1,31 @@
 {
-    "name": "PersonNote",
-    "base": "Base",
-    "idInjection": true,
-    "options": {
-        "validateUpsert": true
+  "name": "PersonNote",
+  "base": "Base",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": ""
     },
-    "properties": {},
-    "validations": [],
-    "relations": {
-        "person": {
-            "type": "belongsTo",
-            "model": "Person",
-            "foreignKey": ""
-        },
-        "note": {
-            "type": "belongsTo",
-            "model": "Note",
-            "foreignKey": ""
-        }
-    },
-    "acls": [],
-    "methods": {}
+    "note": {
+      "type": "belongsTo",
+      "model": "Note",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
 }
