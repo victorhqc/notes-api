@@ -61,7 +61,6 @@ This is a WIP Project, wait for the first stable release!
 - [x] Signup.
 - [ ] Notes CRUD.
 - [ ] Note Snapshots implementation (no more deleted notes by accident! :D).
-- [ ] Edit Profile.
 - [ ] Share Notes.
 - [ ] Implementing multiple Note types.
 - [ ] Websockets for real time events and notifications.
