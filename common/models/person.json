@@ -1,0 +1,34 @@
+{
+  "name": "Person",
+  "plural": "people",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "notes": {
+      "type": "hasAndBelongsToMany",
+      "model": "Note",
+      "foreignKey": "",
+      "through": "PersonNote"
+    },
+    "snapshots": {
+      "type": "hasMany",
+      "model": "Snapshot",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

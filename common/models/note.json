@@ -1,0 +1,43 @@
+{
+    "name": "Note",
+    "plural": "notes",
+    "base": "Base",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string",
+            "required": true,
+            "default": "#fff"
+        },
+        "type": {
+            "type": "string",
+            "required": true,
+            "default": "text"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "people": {
+            "type": "hasAndBelongsToMany",
+            "model": "Person",
+            "foreignKey": "",
+            "through": "PersonNote"
+        },
+        "snapshots": {
+            "type": "hasMany",
+            "model": "Snapshot",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

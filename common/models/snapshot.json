@@ -1,0 +1,30 @@
+{
+  "name": "Snapshot",
+  "plural": "snapshots",
+  "base": "Base",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "model": "Person",
+      "foreignKey": "",
+      "type": "belongsTo"
+    },
+    "note": {
+      "model": "Note",
+      "foreignKey": "",
+      "type": "belongsTo"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

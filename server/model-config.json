@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -29,6 +30,26 @@
     "public": false
   },
   "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Base": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Person": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Note": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Snapshot": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PersonNote": {
     "dataSource": "db",
     "public": false
   }
